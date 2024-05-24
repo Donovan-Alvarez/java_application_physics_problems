@@ -52,6 +52,11 @@ public class Panel_Problemas extends javax.swing.JFrame {
         });
 
         jButton3.setText("Tercera ley de newton");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setText("Primera ley de newton");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -114,6 +119,12 @@ public class Panel_Problemas extends javax.swing.JFrame {
         panel_Primera_Ley_Newton.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        Panel_Tercera_Ley_Newton panel_Tercera_Ley_Newton = new Panel_Tercera_Ley_Newton();
+        panel_Tercera_Ley_Newton.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments

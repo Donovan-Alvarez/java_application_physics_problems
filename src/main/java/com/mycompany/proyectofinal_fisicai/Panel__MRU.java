@@ -41,6 +41,7 @@ public class Panel__MRU extends javax.swing.JFrame {
         jTextField6 = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -101,6 +102,13 @@ public class Panel__MRU extends javax.swing.JFrame {
             }
         });
 
+        jButton3.setText("Salir");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -110,47 +118,55 @@ public class Panel__MRU extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(277, 277, 277))
             .addGroup(layout.createSequentialGroup()
-                .addGap(45, 45, 45)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(45, 45, 45)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel2))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton2))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(41, 41, 41)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel3)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabel2))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jButton2))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(41, 41, 41)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel4)
+                                    .addComponent(jLabel3)
+                                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton3)))
                 .addContainerGap(50, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(33, 33, 33)
+                .addContainerGap()
+                .addComponent(jButton3)
+                .addGap(4, 4, 4)
                 .addComponent(jLabel1)
                 .addGap(5, 5, 5)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(jLabel3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton2)))
                 .addGap(63, 63, 63)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -180,66 +196,76 @@ public class Panel__MRU extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        if(jComboBox1.getSelectedItem().toString().equals("Distancia")){
+        if (jComboBox1.getSelectedItem().toString().equals("Distancia")) {
             jTextField2.setText("Velocidad");
             jTextField3.setText("Tiempo");
             jTextField1.setText("d = v * t");
             jTextField4.setText("");
             jTextField5.setText("");
             jTextField6.setText("");
-        }else if(jComboBox1.getSelectedItem().toString().equals("Tiempo")){
+        } else if (jComboBox1.getSelectedItem().toString().equals("Tiempo")) {
             jTextField2.setText("Distancia");
             jTextField3.setText("Velocidad");
             jTextField1.setText("t = d / v");
             jTextField4.setText("");
             jTextField5.setText("");
-            jTextField6.setText("");            
-        }else if(jComboBox1.getSelectedItem().toString().equals("Velocidad")){
+            jTextField6.setText("");
+        } else if (jComboBox1.getSelectedItem().toString().equals("Velocidad")) {
             jTextField2.setText("Distancia");
             jTextField3.setText("Tiempo");
             jTextField1.setText("v = d / t");
             jTextField4.setText("");
             jTextField5.setText("");
-            jTextField6.setText("");            
+            jTextField6.setText("");
         }
-               
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if(jComboBox1.getSelectedItem().toString().equals("Distancia")){
-            if(jTextField4.getText().isEmpty() || jTextField5.getText().isEmpty()){
-                JOptionPane.showMessageDialog(this, "Debes de llenar los datos corrrespondientes","",JOptionPane.ERROR_MESSAGE);
-            }else{
-                Double velocidad = Double.parseDouble(jTextField4.getText());
-                Double tiempo = Double.parseDouble(jTextField5.getText());
-                var resultado = velocidad * tiempo;
-                jTextField6.setText(String.valueOf(resultado));                
-            }
+        try {
+            if (jComboBox1.getSelectedItem().toString().equals("Distancia")) {
+                if (jTextField4.getText().isEmpty() || jTextField5.getText().isEmpty()) {
+                    JOptionPane.showMessageDialog(this, "Debes de llenar los datos corrrespondientes", "", JOptionPane.ERROR_MESSAGE);
+                } else {
+                    Double velocidad = Double.parseDouble(jTextField4.getText());
+                    Double tiempo = Double.parseDouble(jTextField5.getText());
+                    var resultado = velocidad * tiempo;
+                    jTextField6.setText(String.valueOf(resultado));
+                }
 
-        }else if(jComboBox1.getSelectedItem().toString().equals("Tiempo")){  
-            if(jTextField4.getText().isEmpty() || jTextField5.getText().isEmpty()){
-                JOptionPane.showMessageDialog(this, "Debes de llenar los datos corrrespondientes","",JOptionPane.ERROR_MESSAGE);
-            }else{
-                Double distancia = Double.parseDouble(jTextField4.getText());
-                Double velocidad = Double.parseDouble(jTextField5.getText());                
-                var resultado = distancia / velocidad;
-                jTextField6.setText(String.valueOf(resultado));                 
-            }            
-            
-        }else if(jComboBox1.getSelectedItem().toString().equals("Velocidad")){
-            if(jTextField4.getText().isEmpty() || jTextField5.getText().isEmpty()){
-                JOptionPane.showMessageDialog(this, "Debes de llenar los datos corrrespondientes","",JOptionPane.ERROR_MESSAGE);
-            }else{
-                Double distancia = Double.parseDouble(jTextField4.getText());
-                Double tiempo = Double.parseDouble(jTextField5.getText());               
-                var resultado = distancia / tiempo;
-                jTextField6.setText(String.valueOf(resultado));
-            }   
-            
-        }else{
-            JOptionPane.showMessageDialog(this, "", "Debes de escoger qué quieres buscar", JOptionPane.WARNING_MESSAGE);
+            } else if (jComboBox1.getSelectedItem().toString().equals("Tiempo")) {
+                if (jTextField4.getText().isEmpty() || jTextField5.getText().isEmpty()) {
+                    JOptionPane.showMessageDialog(this, "Debes de llenar los datos corrrespondientes", "", JOptionPane.ERROR_MESSAGE);
+                } else {
+                    Double distancia = Double.parseDouble(jTextField4.getText());
+                    Double velocidad = Double.parseDouble(jTextField5.getText());
+                    var resultado = distancia / velocidad;
+                    jTextField6.setText(String.valueOf(resultado));
+                }
+
+            } else if (jComboBox1.getSelectedItem().toString().equals("Velocidad")) {
+                if (jTextField4.getText().isEmpty() || jTextField5.getText().isEmpty()) {
+                    JOptionPane.showMessageDialog(this, "Debes de llenar los datos corrrespondientes", "", JOptionPane.ERROR_MESSAGE);
+                } else {
+                    Double distancia = Double.parseDouble(jTextField4.getText());
+                    Double tiempo = Double.parseDouble(jTextField5.getText());
+                    var resultado = distancia / tiempo;
+                    jTextField6.setText(String.valueOf(resultado));
+                }
+
+            } else {
+                JOptionPane.showMessageDialog(this, "", "Debes de escoger qué quieres buscar", JOptionPane.WARNING_MESSAGE);
+            }
+        } catch (Exception e) {
+              JOptionPane.showMessageDialog(this, "Ocurrio un error inesperado", "", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        Panel_Problemas panel_Inicial = new Panel_Problemas();
+        panel_Inicial.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -248,6 +274,7 @@ public class Panel__MRU extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
